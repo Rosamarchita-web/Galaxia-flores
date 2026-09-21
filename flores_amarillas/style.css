@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#canvas-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#title {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#title h1 {
+  color: #fffba3;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  line-height: 1.1;
+  text-shadow: 0 0 10px rgba(255, 230, 0, 0.8),
+               0 0 20px rgba(255, 200, 0, 0.6),
+               0 0 30px rgba(255, 180, 0, 0.4);
+}
